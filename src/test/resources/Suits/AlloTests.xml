@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="AlloTests" verbose="1" >
+    <test name="AlloRegistrationTest" >
+        <classes>
+            <class name="Tests.AlloRegistrationTest" />
+        </classes>
+    </test>
+    <test name="AlloLoginTests" >
+        <classes>
+            <class name="Tests.AlloLoginTests" />
+        </classes>
+    </test>
+    <test name="AlloCartTest" >
+        <classes>
+            <class name="Tests.AlloCartTest" />
+        </classes>
+    </test>
+    <test name="AlloCompareProductTest" >
+        <classes>
+            <class name="Tests.AlloCompareProductsTest" />
+        </classes>
+    </test>
+    <test name="AlloOpenStartPageTest" >
+        <classes>
+            <class name="Tests.AlloOpenStartPageTest" />
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="AllTests" verbose="1">
+    <suite-files>
+        <suite-file path="AlloTests.xml"/>
+        <suite-file path="SteamTests.xml"/>
+    </suite-files>
+    <test name="BookingTest">
+        <classes>
+            <class name="Tests.BookHotelBookingTest"/>
+        </classes>
+    </test>
+</suite>

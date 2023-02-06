@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="LoginTests" verbose="1" >
+
+    <test name="PositiveTests" >
+        <groups>
+            <run>
+                <include name="positiveLoginTests"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Tests.SteamLoginTests" />
+        </classes>
+    </test>
+
+    <test name="NegativeUserNameTest">
+        <parameter name="username"  value="eduardnastych"/>
+        <parameter name="password"  value="eduard27072002"/>
+        <parameter name="expectedpopUpNotification"  value="Будь ласка, перевірте логін і пароль свого акаунта, а потім спробуйте знову."/>
+        <classes>
+            <class name="Tests.SteamLoginTests">
+                <methods>
+                    <include name="negativeLoginTest"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+    <test name="NegativePasswordTest">
+        <parameter name="username"  value="anyashyta"/>
+        <parameter name="password"  value="petro1234"/>
+        <parameter name="expectedpopUpNotification"  value="Будь ласка, перевірте логін і пароль свого акаунта, а потім спробуйте знову."/>
+        <classes>
+            <class name="Tests.SteamLoginTests">
+                <methods>
+                    <include name="negativeLoginTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
